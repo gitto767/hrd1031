@@ -5,6 +5,19 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+<script>
+function check(){
+	if(document.form.bookno.value==""){
+		alert("도서코드를 입력하세요.");
+		document.form.bookno.focus();
+	}else if(document.form.author.value==""){
+		alert("저자을 입력하세요.");
+		document.form.author.focus();
+	}else{
+		document.form.submit();
+	}
+}
+</script>
 </head>
 <body>
 <%@ include file="header.jsp" %>
